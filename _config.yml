@@ -2,7 +2,7 @@
 title: Junglebarry
 email: david@junglebarry.com
 description: > # this means to ignore newlines until "baseurl:"
-  The personal blog of David James Brooks, Chief Technology Officer at Whisk.com.
+  The personal blog of David James Brooks.
   Likely to feature functional programming, scala, and natural language processing.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://junglebarry.com" # the base hostname & protocol for your site
