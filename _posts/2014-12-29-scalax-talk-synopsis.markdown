@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "Shopping around with CRDTs at Whisk"
+title:  "Talk: Shopping around with CRDTs at Whisk"
 date:   2014-12-29 11:44:54
-categories: tech whisk crdt
+categories: tech whisk
 ---
 
-I recently gave a talk at [Scala eXchange][scala-exchange], entitled "Shopping around with CRDTs at Whisk". In the talk, I describe how we use [Conflict-free Replicated Data Types][crdt-wiki] to power the [Whisk][whisk] shopping list apps. The talk is intended to cover:
+I recently gave a talk at [Scala eXchange][scala-exchange], entitled "Shopping around with CRDTs at Whisk". In the talk, I describe how we use [Conflict-free Replicated Data Types][crdt-wiki] to power the [Whisk][whisk] shopping list apps. The talk is intended as introduction to using CRDTs for a general developer audience.
+
+In the talk, I cover:
 
 * Offline and data synchronisation for mobile and web applications;
 * The problems associated with data sync - concurrency;

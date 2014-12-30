@@ -2,8 +2,9 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-top: 5px solid $brand-contrast-color;
+    border-bottom: 1px solid $brand-contrast-color;
+    font-family: $contrast-font-family;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -19,13 +20,19 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $brand-contrast-color;
     }
 }
 
 .site-nav {
     float: right;
     line-height: 56px;
+
+
+    .fa {
+        color: $text-color;
+        font-size: 18px;
+    }
 
     .menu-icon {
         display: none;
@@ -86,14 +93,63 @@
     }
 }
 
+.site-hero {
+    width: 85%;
+    margin: 30px 0;
+    margin-top: 0px;
+    margin-left: -30px;
+    padding: 20px 20px 24px;
+    padding-left: 50px;
+    
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
 
+    background-image: -webkit-gradient(linear, left top, left bottom, from($brand-contrast-color), to($brand-gradient-color));
+    background-image: -webkit-linear-gradient(top, $brand-contrast-color 0%, $brand-gradient-color 100%);
+    background-image: -moz-linear-gradient(top, $brand-contrast-color 0%, $brand-gradient-color 100%);
+    background-image: -o-linear-gradient(top, $brand-contrast-color 0%, $brand-gradient-color 100%);
+    background-image: linear-gradient(to bottom, $brand-contrast-color 0%, $brand-gradient-color 100%);
+
+    h1 {
+        font-size: 36px;
+
+        @include media-query($on-laptop) {
+            font-size: 30px;
+        }
+
+        @include media-query($on-palm) {
+            font-size: 24px;
+        }
+    }
+
+    span {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+
+        @include media-query($on-palm) {
+            font-size: 16px;
+        }
+    }
+}
 
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $brand-contrast-color;
     padding: $spacing-unit 0;
+
+    .fa {
+        color: $grey-color;
+        font-size: 18px;
+    }
 }
 
 .footer-heading {
@@ -166,6 +222,7 @@
 }
 
 .page-heading {
+    font-family: $contrast-font-family;
     font-size: 20px;
 }
 
@@ -178,7 +235,7 @@
     }
 }
 
-.post-meta {
+.post-meta, .post-excerpt {
     font-size: $small-font-size;
     color: $grey-color;
 }
@@ -190,6 +247,7 @@
 
 
 
+
 /**
  * Posts
  */
@@ -198,6 +256,7 @@
 }
 
 .post-title {
+    font-family: $contrast-font-family;
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
@@ -234,3 +293,67 @@
         }
     }
 }
+
+
+img {
+    &.image {
+        margin: 10px;
+    }
+    &.image-thumb {
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        height: 160px;
+        width: 160px;
+        
+        @include media-query($on-laptop) {
+            height: 120px;
+            width: 120px;
+        }
+        @include media-query($on-palm) {
+            height: 80px;
+            width: 80px;
+        }
+    }
+    &.image-large {
+        -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+        -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 1px 5px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(0,0,0,0.3);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        height: 320px;
+        width: 320px;
+    }
+}
+
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+
+/**
+ * See: http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+

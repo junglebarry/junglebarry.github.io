@@ -4,6 +4,15 @@ layout: default
 
 <div class="home">
 
+  <div class="site-hero">
+
+    <img src="/images/junglebarry.jpg" alt="A photo of David James Brooks (aka Junglebarry) standing in front of a temple in Tokyo" class="image image-thumb float-right" />
+    <h1>Welcome to the jungle</h1>
+
+    A ramble around the foothills of functional programming, scala, and natural language processing.
+    <span class="clearfix"></span>
+  </div>
+
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
@@ -14,6 +23,14 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+
+        <div class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
+
+        <span class="post-more">
+          <a href="{{ post.url }}">Read more &rarr;</a>
+        </span>
       </li>
     {% endfor %}
   </ul>

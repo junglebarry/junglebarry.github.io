@@ -4,13 +4,15 @@ title: About
 permalink: /about/
 ---
 
+<img src="/images/junglebarry.jpg" alt="A photo of David James Brooks (aka Junglebarry) standing in front of a temple in Tokyo" class="image image-large float-right" />
+
 This is the personal blog of David James Brooks.
 
-I'm the Chief Technology Officer at Whisk.com, a startup based in Birmingham, UK.
+I'm the Chief Technology Officer at [Whisk.com][whisk], a startup based in Birmingham, UK.
 
-I'm a recovering academic, having both a B.Sc. in Artificial Intelligence and Computer Science, and a Ph.D. in Computer Science from the [University of Birmingham][uob]. I specialised in Natural Language Processing and Machine Learning.
+I'm a recovering academic, having both a B.Sc. in Artificial Intelligence and Computer Science, and a Ph.D. in Computer Science from the [University of Birmingham][uob]. I specialised in Natural Language Processing and Machine Learning. I love helping people learn to code.
 
-I've lived in and around Birmingham for most of my life, and I've worked at a few Birmingham-area startups, including [Untyped][untyped] and [oMbiel][ombiel].
+I've lived in and around Birmingham for most of my life, and I've worked at a few Birmingham-area startups, including [Untyped][untyped] and [oMbiel][ombiel]. 
 
 This blog is likely to contain my musings on:
 

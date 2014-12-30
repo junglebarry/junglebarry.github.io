@@ -6,26 +6,30 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family:     Helvetica, Arial, sans-serif;
+$base-font-size:       16px;
+$contrast-font-family: Andale Mono, monospace;
+$small-font-size:      $base-font-size * 0.875;
+$base-line-height:     1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:         30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:           #eee;
+$highlight-color:      rgba(255, 218, 0, 0.9);
+$background-color:     rgba(0, 24, 50, 0.9);
+$brand-color:          rgba(255, 140, 0, 0.9);
+$brand-contrast-color: rgba(255, 68, 120, 0.9);
+$brand-gradient-color: rgba(177, 29, 68, 0.9);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:           rgba(193, 193, 193, 0.9);
+$grey-color-light:     lighten($grey-color, 40%);
+$grey-color-dark:      darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:        800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:              600px;
+$on-laptop:            800px;
 
 
 
