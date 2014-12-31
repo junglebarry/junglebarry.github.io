@@ -20,6 +20,7 @@ This blog is likely to contain my musings on:
 * Scala
 * Natural language processing
 * Building software
+* Tech. about which I'm trying to learn
 
 but I will also ramble on other matters.
 
