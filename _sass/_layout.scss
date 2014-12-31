@@ -28,12 +28,6 @@
     float: right;
     line-height: 56px;
 
-
-    .fa {
-        color: $text-color;
-        font-size: 18px;
-    }
-
     .menu-icon {
         display: none;
     }
@@ -145,11 +139,6 @@
 .site-footer {
     border-top: 1px dashed $brand-contrast-color;
     padding: $spacing-unit 0;
-
-    .fa {
-        color: $grey-color;
-        font-size: 18px;
-    }
 }
 
 .footer-heading {
@@ -329,31 +318,3 @@ img {
         width: 320px;
     }
 }
-
-.float-right {
-    float: right;
-}
-.float-left {
-    float: left;
-}
-
-/**
- * See: http://nicolasgallagher.com/micro-clearfix-hack/
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-.clearfix:after {
-    clear: both;
-}
-

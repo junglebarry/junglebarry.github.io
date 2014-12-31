@@ -171,6 +171,12 @@ pre {
 }
 
 
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
 
 /**
  * Clearfix
@@ -184,21 +190,19 @@ pre {
     }
 }
 
+.clearfix {
+    @extend %clearfix;
+}
+
 
 
 /**
  * Icons
  */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+.fa {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    color: $text-color;
 }
