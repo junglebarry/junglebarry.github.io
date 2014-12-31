@@ -3,6 +3,7 @@ layout: post
 title:  "Talk: Shopping around with CRDTs at Whisk"
 date:   2014-12-29 11:44:54
 categories: tech whisk
+tags: [tech, whisk, crdt, scala]
 ---
 
 I recently gave a talk at [Scala eXchange][scala-exchange], entitled "Shopping around with CRDTs at Whisk". In the talk, I describe how we use [Conflict-free Replicated Data Types][crdt-wiki] to power the [Whisk][whisk] shopping list apps. The talk is intended as a practical introduction to CRDTs for a general developer audience.
